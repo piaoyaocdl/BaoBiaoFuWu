@@ -16,15 +16,10 @@ import riswell.util.GongJu;
 @Component
 public class ChuShiHua implements ApplicationListener<ApplicationReadyEvent>
 {
-
-	
-
 	@Override
 	@Transactional
 	public void onApplicationEvent(ApplicationReadyEvent event)
 	{
-		
-
 		/*********************************************************************************
 		 * 
 		 * 文件夹初始化
@@ -56,9 +51,6 @@ public class ChuShiHua implements ApplicationListener<ApplicationReadyEvent>
 		System.err.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 		System.err.println("");
 		System.err.println("");
-		
-		
-
 	}
 
 }
