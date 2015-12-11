@@ -42,7 +42,7 @@ public class YiChangJiLu
 	 * @param qiedian
 	 * @param yichang
 	 */
-	@AfterThrowing(value = "qiedian()", throwing = "yichang")
+//	@AfterThrowing(value = "qiedian()", throwing = "yichang")
 	public void afterThrowing(JoinPoint qiedian, Exception yichang)
 	{
 		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())

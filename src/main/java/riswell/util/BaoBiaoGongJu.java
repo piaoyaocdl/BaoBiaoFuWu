@@ -150,7 +150,7 @@ public class BaoBiaoGongJu
 
 			if (type == TiHuanType.ID)
 			{
-				ls = chileEle.attributeValue("id");
+				ls = chileEle.attributeValue("tihuan");
 			}
 			if (type == TiHuanType.TEXT)
 			{

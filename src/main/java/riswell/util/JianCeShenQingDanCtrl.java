@@ -26,11 +26,11 @@ public class JianCeShenQingDanCtrl
 	 */
 	@RequestMapping("/xiazaibaobiao")
 	@ResponseBody
-	public ResponseEntity<byte[]> xiazaibaobiao(String json) throws IOException
+	public ResponseEntity<byte[]> xiazaibaobiao(int id ,int mobanhao) throws IOException
 	{
 	
 
-		Document doc = BaoBiaoGongJu.getDocument("shiyan.xml");
+		Document doc = BaoBiaoGongJu.getDocument("linchuanghla-shiyanjieguofenxin-moban5.xml");
 		Element root = doc.getRootElement();
 		Element ele = BaoBiaoGongJu.getElement(root, "tihuan", TiHuanType.ID);
 		Element pa = ele.getParent();
