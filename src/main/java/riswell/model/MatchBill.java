@@ -1,5 +1,5 @@
 package riswell.model;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -85,6 +85,14 @@ public class MatchBill implements java.io.Serializable
 	private String zhuyuanhao;
 	private Date jiancedanriqi;
 	private String binganhao;
+	private String remark1;
+	private String remark2;
+	private String remark3;
+	private String remark4;
+	private String remark5;
+	private String fenxi;
+	private String zhushi;
+	private String shenfenzhenghao;
 	private Set<SampleInfo> sampleInfos = new HashSet<SampleInfo>(0);
 
 	public MatchBill()
@@ -114,7 +122,8 @@ public class MatchBill implements java.io.Serializable
 			String reagent2, String reportNo, String hositalNo, String invoiceNo, String invoiceType, String datebirth,
 			String diagnosis, String email, String company, Date chushengriqi, String linchuangzhengduan,
 			Character menzhen, Character zhuyuan, String chuanghao, String zhuyuanhao, Date jiancedanriqi,
-			String binganhao, Set<SampleInfo> sampleInfos)
+			String binganhao, String remark1, String remark2, String remark3, String remark4, String remark5,
+			String fenxi, String zhushi, String shenfenzhenghao, Set<SampleInfo> sampleInfos)
 	{
 		this.id = id;
 		this.billNo = billNo;
@@ -189,6 +198,14 @@ public class MatchBill implements java.io.Serializable
 		this.zhuyuanhao = zhuyuanhao;
 		this.jiancedanriqi = jiancedanriqi;
 		this.binganhao = binganhao;
+		this.remark1 = remark1;
+		this.remark2 = remark2;
+		this.remark3 = remark3;
+		this.remark4 = remark4;
+		this.remark5 = remark5;
+		this.fenxi = fenxi;
+		this.zhushi = zhushi;
+		this.shenfenzhenghao = shenfenzhenghao;
 		this.sampleInfos = sampleInfos;
 	}
 
@@ -920,6 +937,86 @@ public class MatchBill implements java.io.Serializable
 	public void setBinganhao(String binganhao)
 	{
 		this.binganhao = binganhao;
+	}
+
+	public String getRemark1()
+	{
+		return this.remark1;
+	}
+
+	public void setRemark1(String remark1)
+	{
+		this.remark1 = remark1;
+	}
+
+	public String getRemark2()
+	{
+		return this.remark2;
+	}
+
+	public void setRemark2(String remark2)
+	{
+		this.remark2 = remark2;
+	}
+
+	public String getRemark3()
+	{
+		return this.remark3;
+	}
+
+	public void setRemark3(String remark3)
+	{
+		this.remark3 = remark3;
+	}
+
+	public String getRemark4()
+	{
+		return this.remark4;
+	}
+
+	public void setRemark4(String remark4)
+	{
+		this.remark4 = remark4;
+	}
+
+	public String getRemark5()
+	{
+		return this.remark5;
+	}
+
+	public void setRemark5(String remark5)
+	{
+		this.remark5 = remark5;
+	}
+
+	public String getFenxi()
+	{
+		return this.fenxi;
+	}
+
+	public void setFenxi(String fenxi)
+	{
+		this.fenxi = fenxi;
+	}
+
+	public String getZhushi()
+	{
+		return this.zhushi;
+	}
+
+	public void setZhushi(String zhushi)
+	{
+		this.zhushi = zhushi;
+	}
+
+	public String getShenfenzhenghao()
+	{
+		return this.shenfenzhenghao;
+	}
+
+	public void setShenfenzhenghao(String shenfenzhenghao)
+	{
+		this.shenfenzhenghao = shenfenzhenghao;
 	}
 
 	public Set<SampleInfo> getSampleInfos()
