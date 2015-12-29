@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 
@@ -30,6 +30,7 @@ public class BoardGrid implements java.io.Serializable
 	private String remark;
 	private Date recordTime;
 	private String recordName;
+	private Integer forPoint;
 
 	public BoardGrid()
 	{
@@ -47,7 +48,7 @@ public class BoardGrid implements java.io.Serializable
 	public BoardGrid(int id, Integer operId, String boardNo, char operType, char billKind, String code, int no,
 			String barcode, String point, Character rcsId, String pcrS, String pcrS1, String pcrS2, String secore,
 			String seqNo, String secoreName, Character lowId, Character dbId, String remark, Date recordTime,
-			String recordName)
+			String recordName, Integer forPoint)
 	{
 		this.id = id;
 		this.operId = operId;
@@ -70,6 +71,7 @@ public class BoardGrid implements java.io.Serializable
 		this.remark = remark;
 		this.recordTime = recordTime;
 		this.recordName = recordName;
+		this.forPoint = forPoint;
 	}
 
 	public int getId()
@@ -280,6 +282,16 @@ public class BoardGrid implements java.io.Serializable
 	public void setRecordName(String recordName)
 	{
 		this.recordName = recordName;
+	}
+
+	public Integer getForPoint()
+	{
+		return this.forPoint;
+	}
+
+	public void setForPoint(Integer forPoint)
+	{
+		this.forPoint = forPoint;
 	}
 
 }

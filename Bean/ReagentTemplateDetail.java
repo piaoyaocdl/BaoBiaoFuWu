@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 
@@ -20,6 +20,7 @@ public class ReagentTemplateDetail implements java.io.Serializable
 	private Date recordTime;
 	private Date prodDate;
 	private Date validDate;
+	private String dankongyongliang;
 
 	public ReagentTemplateDetail()
 	{
@@ -33,7 +34,7 @@ public class ReagentTemplateDetail implements java.io.Serializable
 
 	public ReagentTemplateDetail(int id, ReagentTemplate reagentTemplate, Integer reagentId, String reagentName,
 			String batchNo, Integer batchId, String remark, String recordName, Date recordTime, Date prodDate,
-			Date validDate)
+			Date validDate, String dankongyongliang)
 	{
 		this.id = id;
 		this.reagentTemplate = reagentTemplate;
@@ -46,6 +47,7 @@ public class ReagentTemplateDetail implements java.io.Serializable
 		this.recordTime = recordTime;
 		this.prodDate = prodDate;
 		this.validDate = validDate;
+		this.dankongyongliang = dankongyongliang;
 	}
 
 	public int getId()
@@ -156,6 +158,16 @@ public class ReagentTemplateDetail implements java.io.Serializable
 	public void setValidDate(Date validDate)
 	{
 		this.validDate = validDate;
+	}
+
+	public String getDankongyongliang()
+	{
+		return this.dankongyongliang;
+	}
+
+	public void setDankongyongliang(String dankongyongliang)
+	{
+		this.dankongyongliang = dankongyongliang;
 	}
 
 }

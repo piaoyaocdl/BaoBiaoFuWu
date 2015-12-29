@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 
@@ -20,6 +20,7 @@ public class HlaResult implements java.io.Serializable
 	private String remark;
 	private Date recordTime;
 	private String recordName;
+	private String remark2;
 
 	public HlaResult()
 	{
@@ -33,7 +34,7 @@ public class HlaResult implements java.io.Serializable
 	}
 
 	public HlaResult(int id, String sampleNo, String point, String lowRes, String lowAap, String lowAs, String highRes,
-			String lowPac, String remark, Date recordTime, String recordName)
+			String lowPac, String remark, Date recordTime, String recordName, String remark2)
 	{
 		this.id = id;
 		this.sampleNo = sampleNo;
@@ -46,6 +47,7 @@ public class HlaResult implements java.io.Serializable
 		this.remark = remark;
 		this.recordTime = recordTime;
 		this.recordName = recordName;
+		this.remark2 = remark2;
 	}
 
 	public int getId()
@@ -156,6 +158,16 @@ public class HlaResult implements java.io.Serializable
 	public void setRecordName(String recordName)
 	{
 		this.recordName = recordName;
+	}
+
+	public String getRemark2()
+	{
+		return this.remark2;
+	}
+
+	public void setRemark2(String remark2)
+	{
+		this.remark2 = remark2;
 	}
 
 }

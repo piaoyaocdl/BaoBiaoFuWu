@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 import java.util.HashSet;
@@ -17,7 +17,7 @@ public class SampleInfo implements java.io.Serializable
 	private String name;
 	private String relation;
 	private String providerNo;
-	private Character sampleFrom;
+	private String sampleFrom;
 	private String sampleMan;
 	private Date sampleDate;
 	private String sampleType;
@@ -40,7 +40,7 @@ public class SampleInfo implements java.io.Serializable
 	private Date recordTime;
 	private String recordName;
 	private String yuanshibianhao;
-	private String xingbie;
+	private Character xingbie;
 	private Date caiyangriqi;
 	private Date shouyangriqi;
 	private Date jianceriqi;
@@ -60,11 +60,11 @@ public class SampleInfo implements java.io.Serializable
 	}
 
 	public SampleInfo(int id, MatchBill matchBill, String sampleNo, String name, String relation, String providerNo,
-			Character sampleFrom, String sampleMan, Date sampleDate, String sampleType, Character markId,
-			String pipeMark, Character clotId, String hemolysisType, Character fatLevel, String status,
-			Integer afterNum, String sampleVol, String numUnit, Integer nums, Character feeId, Character reportId,
-			String praRes1, String praRes2, Character okId, String remark, Date recordTime, String recordName,
-			String yuanshibianhao, String xingbie, Date caiyangriqi, Date shouyangriqi, Date jianceriqi, String shijian,
+			String sampleFrom, String sampleMan, Date sampleDate, String sampleType, Character markId, String pipeMark,
+			Character clotId, String hemolysisType, Character fatLevel, String status, Integer afterNum,
+			String sampleVol, String numUnit, Integer nums, Character feeId, Character reportId, String praRes1,
+			String praRes2, Character okId, String remark, Date recordTime, String recordName, String yuanshibianhao,
+			Character xingbie, Date caiyangriqi, Date shouyangriqi, Date jianceriqi, String shijian,
 			String jiancexiangmu, Set<SamplePic> samplePics)
 	{
 		this.id = id;
@@ -165,12 +165,12 @@ public class SampleInfo implements java.io.Serializable
 		this.providerNo = providerNo;
 	}
 
-	public Character getSampleFrom()
+	public String getSampleFrom()
 	{
 		return this.sampleFrom;
 	}
 
-	public void setSampleFrom(Character sampleFrom)
+	public void setSampleFrom(String sampleFrom)
 	{
 		this.sampleFrom = sampleFrom;
 	}
@@ -395,12 +395,12 @@ public class SampleInfo implements java.io.Serializable
 		this.yuanshibianhao = yuanshibianhao;
 	}
 
-	public String getXingbie()
+	public Character getXingbie()
 	{
 		return this.xingbie;
 	}
 
-	public void setXingbie(String xingbie)
+	public void setXingbie(Character xingbie)
 	{
 		this.xingbie = xingbie;
 	}

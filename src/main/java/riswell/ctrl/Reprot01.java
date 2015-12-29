@@ -23,6 +23,21 @@ public class Reprot01
 	@Autowired
 	MatchBillDao matchbilldao;
 	
+	
+	@RequestMapping("/jianceshenqingdan/dayinshouyangbiao")
+	@ResponseBody
+	public void dayinshoyangbiao(String jiancexiangmu,String[] jiancedanbianhao)
+	{
+		System.out.println(jiancexiangmu);
+		for (int i = 0; i < jiancedanbianhao.length; i++)
+		{
+			System.out.println(jiancedanbianhao[i]);
+		}
+	}
+	
+	
+	
+	
 	@RequestMapping("/shiyanjieguofenxi")
 	@ResponseBody
 	public ResponseEntity<byte[]> repo1(int id, int mobanhao) throws IOException

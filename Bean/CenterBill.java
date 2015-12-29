@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 
@@ -30,6 +30,8 @@ public class CenterBill implements java.io.Serializable
 	private String remark;
 	private Date recordTime;
 	private String recordName;
+	private String highLab;
+	private Date highTime;
 
 	public CenterBill()
 	{
@@ -47,7 +49,8 @@ public class CenterBill implements java.io.Serializable
 	public CenterBill(int id, Date notifyDate, String notifyType, String patientNo, String patientName,
 			String providerNo, String providerName, String reqDoctor, String hospitalName, String hpReceipt,
 			Date hpViewDate, Date hpReceiptDate, String whName, String whReceipt, Date whViewDate, Date whReceiptDate,
-			char billId, String billNo, String remark, Date recordTime, String recordName)
+			char billId, String billNo, String remark, Date recordTime, String recordName, String highLab,
+			Date highTime)
 	{
 		this.id = id;
 		this.notifyDate = notifyDate;
@@ -70,6 +73,8 @@ public class CenterBill implements java.io.Serializable
 		this.remark = remark;
 		this.recordTime = recordTime;
 		this.recordName = recordName;
+		this.highLab = highLab;
+		this.highTime = highTime;
 	}
 
 	public int getId()
@@ -280,6 +285,26 @@ public class CenterBill implements java.io.Serializable
 	public void setRecordName(String recordName)
 	{
 		this.recordName = recordName;
+	}
+
+	public String getHighLab()
+	{
+		return this.highLab;
+	}
+
+	public void setHighLab(String highLab)
+	{
+		this.highLab = highLab;
+	}
+
+	public Date getHighTime()
+	{
+		return this.highTime;
+	}
+
+	public void setHighTime(Date highTime)
+	{
+		this.highTime = highTime;
 	}
 
 }

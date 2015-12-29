@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 
@@ -18,6 +18,8 @@ public class SamplePoint implements java.io.Serializable
 	private Date recordTime;
 	private String recordName;
 	private Integer sampleId;
+	private Integer sum;
+	private String ssn;
 
 	public SamplePoint()
 	{
@@ -29,7 +31,7 @@ public class SamplePoint implements java.io.Serializable
 	}
 
 	public SamplePoint(int id, Integer billId, String sampleNo, Character checkItem, String point, String remark,
-			Date recordTime, String recordName, Integer sampleId)
+			Date recordTime, String recordName, Integer sampleId, Integer sum, String ssn)
 	{
 		this.id = id;
 		this.billId = billId;
@@ -40,6 +42,8 @@ public class SamplePoint implements java.io.Serializable
 		this.recordTime = recordTime;
 		this.recordName = recordName;
 		this.sampleId = sampleId;
+		this.sum = sum;
+		this.ssn = ssn;
 	}
 
 	public int getId()
@@ -130,6 +134,26 @@ public class SamplePoint implements java.io.Serializable
 	public void setSampleId(Integer sampleId)
 	{
 		this.sampleId = sampleId;
+	}
+
+	public Integer getSum()
+	{
+		return this.sum;
+	}
+
+	public void setSum(Integer sum)
+	{
+		this.sum = sum;
+	}
+
+	public String getSsn()
+	{
+		return this.ssn;
+	}
+
+	public void setSsn(String ssn)
+	{
+		this.ssn = ssn;
 	}
 
 }

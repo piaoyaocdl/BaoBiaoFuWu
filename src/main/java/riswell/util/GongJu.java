@@ -21,78 +21,7 @@ import org.springframework.http.ResponseEntity;
 public class GongJu
 {
 
-	/**
-	 * 读取文本文件
-	 * 
-	 * @param filePathAndName
-	 *            文件的路径和名称
-	 * @throws IOException
-	 */
-	public static String readTxtFile(String filePathAndName)
-	{
-
-		String re = "文件没有找到";
-		StringBuilder ls = new StringBuilder("");
-		String encoding = "UTF-8";
-
-		File file = new File(filePathAndName);
-		if (file.exists() && file.isFile())
-		{
-			InputStreamReader read = null;
-			BufferedReader bufferedReader = null;
-			try
-			{
-				read = new InputStreamReader(new FileInputStream(file), encoding);
-				bufferedReader = new BufferedReader(read);
-				String lineTxt = null;
-				while ((lineTxt = bufferedReader.readLine()) != null)
-				{
-					ls.append("<p>" + lineTxt + "<p>");
-				}
-			} catch (UnsupportedEncodingException e)
-			{
-				e.printStackTrace();
-			} catch (FileNotFoundException e)
-			{
-				e.printStackTrace();
-			} catch (IOException e)
-			{
-				e.printStackTrace();
-			} finally
-			{
-				if (bufferedReader != null)
-				{
-
-					try
-					{
-						bufferedReader.close();
-					} catch (IOException e)
-					{
-						e.printStackTrace();
-					}
-				}
-				if (read != null)
-				{
-
-					try
-					{
-						read.close();
-					} catch (IOException e)
-					{
-						e.printStackTrace();
-					}
-				}
-			}
-		}
-
-		if (ls.length() >= 20)
-		{
-			re = ls.toString();
-		}
-		return re;
-
-	}
-
+	
 	/**
 	 * Spring MVC 的重定向
 	 */

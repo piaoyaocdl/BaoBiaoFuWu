@@ -1,5 +1,5 @@
 package deefw;
-// Generated 2015-12-10 14:28:51 by Hibernate Tools 4.3.1.Final
+// Generated 2015-12-29 13:42:08 by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 
@@ -20,6 +20,27 @@ public class HlaReportResult implements java.io.Serializable
 	private String recordName;
 	private Date recordTime;
 	private Integer billId;
+	private String resultDp;
+	private String checkMethod;
+	private String danbei;
+	private String resultA2;
+	private String resultB2;
+	private String resultC2;
+	private String resultDq2;
+	private String resultDr2;
+	private String resultDp2;
+	private String resultAKang;
+	private String resultBKang;
+	private String resultCKang;
+	private String resultDqKang;
+	private String resultDrKang;
+	private String resultDpKang;
+	private String resultAMat;
+	private String resultCMat;
+	private String resultDqMat;
+	private String resultDrMat;
+	private String resultDpMat;
+	private String resultBMat;
 
 	public HlaReportResult()
 	{
@@ -32,7 +53,11 @@ public class HlaReportResult implements java.io.Serializable
 	}
 
 	public HlaReportResult(int id, String sampleNo, String resultDq, String resultA, String resultB, String resultC,
-			String resultDr, String remark, String recordName, Date recordTime, Integer billId)
+			String resultDr, String remark, String recordName, Date recordTime, Integer billId, String resultDp,
+			String checkMethod, String danbei, String resultA2, String resultB2, String resultC2, String resultDq2,
+			String resultDr2, String resultDp2, String resultAKang, String resultBKang, String resultCKang,
+			String resultDqKang, String resultDrKang, String resultDpKang, String resultAMat, String resultCMat,
+			String resultDqMat, String resultDrMat, String resultDpMat, String resultBMat)
 	{
 		this.id = id;
 		this.sampleNo = sampleNo;
@@ -45,6 +70,27 @@ public class HlaReportResult implements java.io.Serializable
 		this.recordName = recordName;
 		this.recordTime = recordTime;
 		this.billId = billId;
+		this.resultDp = resultDp;
+		this.checkMethod = checkMethod;
+		this.danbei = danbei;
+		this.resultA2 = resultA2;
+		this.resultB2 = resultB2;
+		this.resultC2 = resultC2;
+		this.resultDq2 = resultDq2;
+		this.resultDr2 = resultDr2;
+		this.resultDp2 = resultDp2;
+		this.resultAKang = resultAKang;
+		this.resultBKang = resultBKang;
+		this.resultCKang = resultCKang;
+		this.resultDqKang = resultDqKang;
+		this.resultDrKang = resultDrKang;
+		this.resultDpKang = resultDpKang;
+		this.resultAMat = resultAMat;
+		this.resultCMat = resultCMat;
+		this.resultDqMat = resultDqMat;
+		this.resultDrMat = resultDrMat;
+		this.resultDpMat = resultDpMat;
+		this.resultBMat = resultBMat;
 	}
 
 	public int getId()
@@ -155,6 +201,216 @@ public class HlaReportResult implements java.io.Serializable
 	public void setBillId(Integer billId)
 	{
 		this.billId = billId;
+	}
+
+	public String getResultDp()
+	{
+		return this.resultDp;
+	}
+
+	public void setResultDp(String resultDp)
+	{
+		this.resultDp = resultDp;
+	}
+
+	public String getCheckMethod()
+	{
+		return this.checkMethod;
+	}
+
+	public void setCheckMethod(String checkMethod)
+	{
+		this.checkMethod = checkMethod;
+	}
+
+	public String getDanbei()
+	{
+		return this.danbei;
+	}
+
+	public void setDanbei(String danbei)
+	{
+		this.danbei = danbei;
+	}
+
+	public String getResultA2()
+	{
+		return this.resultA2;
+	}
+
+	public void setResultA2(String resultA2)
+	{
+		this.resultA2 = resultA2;
+	}
+
+	public String getResultB2()
+	{
+		return this.resultB2;
+	}
+
+	public void setResultB2(String resultB2)
+	{
+		this.resultB2 = resultB2;
+	}
+
+	public String getResultC2()
+	{
+		return this.resultC2;
+	}
+
+	public void setResultC2(String resultC2)
+	{
+		this.resultC2 = resultC2;
+	}
+
+	public String getResultDq2()
+	{
+		return this.resultDq2;
+	}
+
+	public void setResultDq2(String resultDq2)
+	{
+		this.resultDq2 = resultDq2;
+	}
+
+	public String getResultDr2()
+	{
+		return this.resultDr2;
+	}
+
+	public void setResultDr2(String resultDr2)
+	{
+		this.resultDr2 = resultDr2;
+	}
+
+	public String getResultDp2()
+	{
+		return this.resultDp2;
+	}
+
+	public void setResultDp2(String resultDp2)
+	{
+		this.resultDp2 = resultDp2;
+	}
+
+	public String getResultAKang()
+	{
+		return this.resultAKang;
+	}
+
+	public void setResultAKang(String resultAKang)
+	{
+		this.resultAKang = resultAKang;
+	}
+
+	public String getResultBKang()
+	{
+		return this.resultBKang;
+	}
+
+	public void setResultBKang(String resultBKang)
+	{
+		this.resultBKang = resultBKang;
+	}
+
+	public String getResultCKang()
+	{
+		return this.resultCKang;
+	}
+
+	public void setResultCKang(String resultCKang)
+	{
+		this.resultCKang = resultCKang;
+	}
+
+	public String getResultDqKang()
+	{
+		return this.resultDqKang;
+	}
+
+	public void setResultDqKang(String resultDqKang)
+	{
+		this.resultDqKang = resultDqKang;
+	}
+
+	public String getResultDrKang()
+	{
+		return this.resultDrKang;
+	}
+
+	public void setResultDrKang(String resultDrKang)
+	{
+		this.resultDrKang = resultDrKang;
+	}
+
+	public String getResultDpKang()
+	{
+		return this.resultDpKang;
+	}
+
+	public void setResultDpKang(String resultDpKang)
+	{
+		this.resultDpKang = resultDpKang;
+	}
+
+	public String getResultAMat()
+	{
+		return this.resultAMat;
+	}
+
+	public void setResultAMat(String resultAMat)
+	{
+		this.resultAMat = resultAMat;
+	}
+
+	public String getResultCMat()
+	{
+		return this.resultCMat;
+	}
+
+	public void setResultCMat(String resultCMat)
+	{
+		this.resultCMat = resultCMat;
+	}
+
+	public String getResultDqMat()
+	{
+		return this.resultDqMat;
+	}
+
+	public void setResultDqMat(String resultDqMat)
+	{
+		this.resultDqMat = resultDqMat;
+	}
+
+	public String getResultDrMat()
+	{
+		return this.resultDrMat;
+	}
+
+	public void setResultDrMat(String resultDrMat)
+	{
+		this.resultDrMat = resultDrMat;
+	}
+
+	public String getResultDpMat()
+	{
+		return this.resultDpMat;
+	}
+
+	public void setResultDpMat(String resultDpMat)
+	{
+		this.resultDpMat = resultDpMat;
+	}
+
+	public String getResultBMat()
+	{
+		return this.resultBMat;
+	}
+
+	public void setResultBMat(String resultBMat)
+	{
+		this.resultBMat = resultBMat;
 	}
 
 }
