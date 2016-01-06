@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import riswell.dao.MatchBillDao;
 import riswell.model.MatchBill;
 import riswell.util.BaoBiaoGongJu;
-import riswell.util.GongJu;
 import riswell.util.BaoBiaoGongJu.TiHuanType;
+import riswell.util.GongJu;
+
 
 @Controller
 @RequestMapping("/linchuanghla")
-public class Reprot01
+public class Linchuanghla
 {
 	@Autowired
 	MatchBillDao matchbilldao;
@@ -26,13 +27,36 @@ public class Reprot01
 	
 	@RequestMapping("/jianceshenqingdan/dayinshouyangbiao")
 	@ResponseBody
-	public void dayinshoyangbiao(String jiancexiangmu,String[] jiancedanbianhao)
+	public ResponseEntity<byte[]>  dayinshoyangbiao(String jiancexiangmu,String[] jiancedanbianhao) throws IOException
 	{
-		System.out.println(jiancexiangmu);
-		for (int i = 0; i < jiancedanbianhao.length; i++)
-		{
-			System.out.println(jiancedanbianhao[i]);
-		}
+		System.out.println("1111111111111111111111");
+		Document doc = null;
+		
+			// 获取模板
+			doc = BaoBiaoGongJu.getDocument("LinchuangHLA-Jiancexinxidan-Shouyangbiao.xml");
+			Element root = doc.getRootElement();
+			// 获取数据
+
+	MatchBill bill= matchbilldao.findOne(Integer.parseInt( jiancedanbianhao[0]));
+
+			
+			
+			
+			
+			Element ele1 = BaoBiaoGongJu.getElement(root, "yangbenbianhao", TiHuanType.TEXT);
+			ele1.setText(bill.getBillName());
+
+
+		
+
+		String wjm = Double.toString(Math.random()).substring(2) + Long.toString(System.currentTimeMillis()) + ".doc";
+		
+		
+		
+		BaoBiaoGongJu.xieXML(GongJu.getXiangMuLuJing() + "临时文件/" + wjm, doc);
+
+		ResponseEntity<byte[]> ls = GongJu.xiazai(wjm, "临时文件", "临床HLA-实验分析-模板5.doc");
+		return ls;
 	}
 	
 	
